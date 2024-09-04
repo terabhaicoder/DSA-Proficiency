@@ -4,7 +4,7 @@ public:
         int n = s1.length();
         int m = s2.length();
         if(n>m) return false;
-        set<string>st;
+        unordered_set<string>st;
         for(int i=0;i<=m-n;i++){
             string s = s2.substr(i,n);
             sort(s.begin(),s.end());
